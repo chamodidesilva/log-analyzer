@@ -4,9 +4,18 @@ def read_file(file_path):
     except:
         print("File not found")
         exit()
+    line_list = []
+    line_count = 0
     for line in fhand:
+        line_count += 1
         line = line.rstrip()
-        print(line)
+        line_list.append(line)
+    print("all lines: ", line_count)
+    return line_list
 
-inp = input("Enter file name to analyze - ")
-read_file(inp)
+#file_type = input("Enter log file type to analyze - ")
+#full_path = "/var/log/" + file_type
+
+full_path = "/var/log/syslog"
+
+read_file(full_path)
