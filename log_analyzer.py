@@ -15,6 +15,7 @@ def read_file(file_path):
 
 #file_type = input("Enter log file type to analyze - ")
 #full_path = "/var/log/" + file_type
+#testing
 
 full_path = "/var/log/syslog"
 
